@@ -11,7 +11,6 @@ export const getProjets = async (req, res) => {
     }
 }
 
-
 export const getProjet = async (req, res) => {
     try {
         const {id} = req.params;
