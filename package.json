@@ -1,6 +1,8 @@
 {
   "type": "module",
   "scripts": {
+    "test": "jest --forceExit",
+    "test": "node --experimental-scripts --no-warnings --loader jest-light-runner jest",
     "start": "node src/index.js",
     "dev": "node src/index.js",
     "test": "jest"
