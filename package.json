@@ -1,11 +1,9 @@
 {
   "type": "module",
   "scripts": {
-    "test": "jest --forceExit",
-    "test": "node --experimental-scripts --no-warnings --loader jest-light-runner jest",
     "start": "node src/index.js",
     "dev": "node src/index.js",
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --forceExit"
   },
   "dependencies": {
     "express": "^5.2.1",
