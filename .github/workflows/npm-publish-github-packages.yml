@@ -34,6 +34,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
       - run: npm publish --tag latest
+      - run: npm config list
         env:
           NODE_OPTIONS: --experimental-vm-modules
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
