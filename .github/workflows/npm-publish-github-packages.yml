@@ -34,6 +34,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           # Elimina cualquier referencia a 'scope' si no la tienes configurada en package.json
       - run: npm ci
+      - run: npm version patch -m "Upgrade version to %s [skip ci]"
       - run: npm publish --tag latest
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
